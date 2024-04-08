@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/2899445.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- /////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <main class="position-relative ">
+        <div class="container">
+            <div class="Home py-5">
+                <div class="heading">
+                    <h1 class="m-auto mb-5">Bookmarker</h1>
+                </div>
+
+                <div class="bookmarkBody mt-5">
+                    <h2 class="m-auto mt-4 fw-bold my-4"><i class="fa-solid fa-bookmark "></i> Bookmark your favorite
+                        sites <i class="fa-solid fa-bookmark"></i></h2>
+
+
+                    <div class="allinput mt-2">
+                        <label class="fw-bold" for="bn"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+                        <input class="form-control mt-2" id="bn" type="text" placeholder="Bookmark Name">
+
+
+                        <label class="fw-bold mt-4" for="su"><i class="fa-solid fa-link me-2"></i></i> Site URL</label>
+                        <input class="form-control mt-2" id="su" type="text" placeholder="Website URL">
+
+                        <div class="text-center borderDot">
+                            <button class="btn btnSub my-4 px-5">Submit</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <table class="mt-3 table text-center table-striped bg-light">
+                    <thead>
+                        <tr class="tablerow">
+                            <th class="text-capitalize fw-bold">Index</th>
+                            <th class="text-capitalize fw-bold">Website Name</th>
+                            <th class="text-capitalize fw-bold">Visit</th>
+                            <th class="text-capitalize fw-bold">Updete</th>
+                            <th class="text-capitalize fw-bold">Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="contentBody">
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div
+                class="position-fixed layel overflow-hidden d-none  top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center ">
+                <div class="layer-val shadow  p-4">
+                    <div class="d-flex justify-content-between  inerrDiv ">
+                       <div class="boxDiv d-flex">
+                        <div class="rounded-circle bg-danger me-2"></div>
+                        <div class="rounded-circle bg-warning me-2"></div>
+                        <div class="rounded-circle bg-success me-2"></div>
+                       </div>
+                       <div class="iconClose">
+                        <i class="fa-solid fa-xmark fs-3"></i>
+                       </div>
+                    </div>
+
+                    <div class="contentLayer ">
+                        <p class="fw-bold">Site Name or Url is not valid, Please follow the rules below :</p>
+
+                        <ul class="listLI "type="none">
+                            <li><i class="fa-regular fa-circle-right me-2"></i>Site name must contain at least 3 characters
+                            </li>
+                            <li><i class="fa-regular fa-circle-right me-2"></i>Site URL must be a valid one</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 
+
+  
+ -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
